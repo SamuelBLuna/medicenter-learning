@@ -43,9 +43,11 @@ header {
 
 .menu nav a {
     display: block;
-    padding: 15px;
+    padding: 7px;
     text-decoration: none;
     text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
     color: #727272;
 
 }
@@ -54,7 +56,7 @@ header {
 .menu nav a:hover {
     background-color: #39aae1;
     color: white;
-    font-weight: normal;
+    font-weight: 600;
 }
 
 #banner {
@@ -339,4 +341,11 @@ footer .area_item .post1_desc2 {
     width: 20px;
     align-items: center;
     justify-content: center;
+}
+.post3 p{
+    color: #5c5c5c;
+}
+.post3 span {
+    cursor: pointer;
+    color: white;
 }
