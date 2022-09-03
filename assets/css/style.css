@@ -5,7 +5,6 @@
 body {
     margin: 0;
     padding: 0;
-    padding-bottom: 300px;
 }
 
 header {
@@ -151,6 +150,9 @@ header {
 #geral aside {
     flex: 1;
 }
+.widget {
+    padding-left: 10px;
+}
 .widget_title{
     margin: 30px 0 20px 0;
 }
@@ -168,8 +170,14 @@ header {
 .deparments {
     display: flex;
 }
-.widget_body .quadrados {
-    margin: 20px 10px;
+.deparments_example {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.deparments_example .quadrados {
+    margin: 10px 10px 10px 0;
     width: 140px;
     height: 140px;
     background-color: #0079c7;
@@ -231,4 +239,104 @@ article .news_resume {
     color: #5c5c5c;
     font-size: 14px;
     line-height: 20px;
+}
+footer {
+    display: flex;
+    background-color: #1e1e1e;
+    justify-content: center;
+}
+
+.footer_menu {
+    display: flex;
+    flex: 1;
+}
+.flexcolumn{
+    flex-direction: column;
+}
+.fm_1, .fm_2, .fm_3 {
+    flex: 1;
+    color: white;
+    padding: 20px;
+    cursor: pointer;
+}
+.fm_1 {
+    background-color: #39aae1;
+}
+.fm_2 {
+    background-color: #0079c7;
+}
+.fm_3 {
+    background-color: #2b4c99;
+}
+.footer_area {
+    display: flex;
+    flex: 1;
+    font-size: 14px;
+    line-height: 25px;
+}
+.footer_area a {
+    text-decoration: none;
+    color: #39aae1;
+}
+.area_item {
+    flex: 1;
+    color: white;
+}
+.area_item .widget_title_bar {
+    margin-bottom: 50px;
+}
+footer .widget_title_text {
+    color: white;
+}
+.footer_copy{
+    font-size: 13px;
+    padding: 20px 0;
+    border-top: 1px solid #5c5c5c;
+    color: white;
+}
+.footer_copy span {
+    color: #5c5c5c;
+}
+.footer_banner .banner_title {
+    font-weight: 600;
+}
+footer .area_item .post1_desc1 {
+    font-size: 14px;
+    color: #5c5c5c;
+    line-height: 20px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+footer .area_item .post1_desc2 {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.post1_desc2 .desc_location p,
+.desc_contact p{
+    color: #5c5c5c;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+.desc_contact a{
+    color: white;
+    font-weight: 500;
+}
+.post1_desc3 {
+    display: flex;
+    margin-top: 30px;
+}
+.post1_desc3 a {
+    display: flex;
+    background-color: #5c5c5c;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.post1_desc3 a img {
+    width: 20px;
+    align-items: center;
+    justify-content: center;
 }
