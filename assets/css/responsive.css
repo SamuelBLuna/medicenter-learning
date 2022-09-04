@@ -1,0 +1,88 @@
+@media (max-width: 650px) {
+   
+    header {
+        height: auto;
+    }
+    header .container{
+        flex-direction: row;
+    }
+    .logo {
+        padding: 10px 20px;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .mm_line {
+        height: 3px;
+        background-color: #39aae1;
+    }
+    .menu nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: white;
+    }
+    .menu nav a {
+        padding-bottom: 15px;
+    }
+    .banner_headline h1 {
+        font-size: 55px;
+    }
+    .banner_headline h2 {
+        color: rgb(240, 240, 240);
+        text-shadow: 0px 2px 0 #55555555;
+        font-size: 16px;
+    }
+    .banner_headline{
+        padding-left: 20px;
+        margin: 100px 0;
+    }
+    .banner_options{
+        height: auto;
+        flex-direction: column;
+    }
+    #geral {
+        margin-top: 200px;
+    }
+    .container {
+        flex-direction: column;
+    }
+    #geral section,
+    #geral aside {
+        padding: 20px;
+    }
+    .deparments_example .squares {
+        width: 130px;
+        height: 130px;
+    }
+    .container .ult{
+        margin-bottom: 30px;
+    }
+    .footer_area {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .area_item .widget_title_bar {
+        margin-bottom: 20px;
+    }
+    footer .area_item .post1_desc2  {
+        justify-content: start;
+    }
+    .area_item .post1_desc2 .desc_contact{
+        padding-left: 40%;
+    }
+    .footer_copy {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 929px) {
+    .deparments_example .squares {
+        width: 90px;
+        height: 90px;
+    }
+}

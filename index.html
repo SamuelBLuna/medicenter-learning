@@ -5,6 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <script type="text/javascript">
+
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click", function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex'){
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                } else {
+                    document.querySelector(".menu nav ul").style.display = 'flex';
+                }
+            });
+        };
+        window.addEventListener('resize', function () {
+        var largura = window.innerWidth;
+        if (largura > 600)
+           document.querySelector(".menu nav ul").removeAttribute('style');
+        });
+        </script>
+
     <title>MediCenter</title>
 </head>
 <body>
@@ -16,9 +36,13 @@
             </div>
         <div class="menu">
             <nav>
+                <div class="menuMobile">
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                    <div class="mm_line"></div>
+                </div>
                 <ul>
                     <li class="active"><a href="#">HOME</a></li>
-                    <li><a href="#">home</a></li>
                     <li><a href="#">blog</a></li>
                     <li><a href="#">pages</a></li>
                     <li><a href="#">timetable</a></li>
@@ -164,7 +188,7 @@
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere animi dolorum deserunt magnam .</p>
                         <div class="contact" style="border-top: 1px solid #ccc;">by phone <span>1-800-643-4300</span></div>
                         <div class="contact">by email: </div>
-                        <div class="contact ult">or <a href="#">or fill in the form</a> on our contact page</div>
+                        <div class="contact ult">or <a href="#">or fill in the form</a> on our contact pages</div>
                     </div>
                   </div>      
                 </aside>

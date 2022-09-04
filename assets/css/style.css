@@ -23,11 +23,12 @@ header {
     display: flex;
     cursor: pointer;
     align-items: center;
+    padding-left: 20px;
 }
 
-.menu {
-    display: flex;
+.menu {display: flex;
     align-items: center;
+    padding-right: 10px;
 }
 
 .menu nav ul,
@@ -351,41 +352,10 @@ footer .area_item .post1_desc2 {
     color: white;
 }
 
-@media (max-width: 650px) {
-   
-    .banner_headline h1 {
-        font-size: 55px;
-    }
-    .banner_headline h2 {
-        font-size: 16px;
-    }
-    .banner_headline{
-        padding-left: 20px;
-        margin: 150px 0;
-    }
-    .banner_options{
-        height: auto;
-        flex-direction: column;
-    }
-    #geral {
-        margin-top: 300px;
-    }
-    .container {
-        flex-direction: column;
-    }
-    .container .ult{
-        margin-bottom: 30px;
-    }
-    .footer_area {
-        flex-direction: column;
-    }
-    .area_item .widget_title_bar {
-        margin-bottom: 20px;
-    }
-    footer .area_item .post1_desc2  {
-        justify-content: start;
-    }
-    .area_item .post1_desc2 .desc_contact{
-        padding-left: 40%;
-    }
+/* mm_line*/
+.menuMobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin: 40px 20px 40px 0;
 }
